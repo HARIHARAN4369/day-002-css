@@ -1,0 +1,106 @@
+//div,section,article differences...
+//CSS intro to css
+//display inline as well block level elements
+//div : it was introduced in the HTML4
+//div:represents the division / or a portion of document
+
+//section: represents the one portion or a section of document
+//holds similar category of elements 
+//section vs div
+
+//CSS:cascaded style sheet
+//3 different types
+//1.inline css
+//2.internal css
+//3.external css
+
+//inline css:it is applied to the specific  element
+//it is done using style tag
+//property:value
+//below structure represents inline
+//<div style=""></div>
+
+//internal css:
+Selectors:helps us to have styling on the specific elements/group of elements
+class,id,tag,pseudo selectors
+class,id, tag 
+differences
+<style>
+</style>
+
+class selectors:
+//it is applicable to more than one elements
+//class selectors are represented in : .classname{
+
+}
+
+//can i apply 2 class selector on a single element??
+//yes
+
+
+
+//priority wise for css
+inline>internal>external
+
+
+//can i apply inline as well as internal to same element?
+//yes 
+//then inline will have that priority 
+
+
+//id selector:
+//it is applicable to only element 
+//syntax: #idname{
+
+}
+
+//again the priorities based on selectors
+//order of priority
+id>class
+
+usage of important key word
+
+
+//block level vs inline
+
+block level:they always start on the new line
+ex:div
+inline level:they always start on the same line
+ex:span
+
+can i convert block level to inline as well as inline to block?
+yes
+
+By using display properties:
+div: default block
+span:iniline
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+    <style>
+    div{
+        background-color: green;
+        display: inline;
+    }
+    span{
+        background-color:orange;
+        /* display: block; */
+    }
+  
+    </style>
+
+</head>
+<body>
+<!-- <div>this is div</div>
+<div style="background-color: orange;">this is div</div>
+<div>this is div</div> -->
+
+<span>this is span</span>
+<span style="display: block;">this is span</span>
+</body>
+</html>
